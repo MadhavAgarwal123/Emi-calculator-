@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive EMI Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="left">
+
+            <h1>💰 EMI Calculator</h1>
+
+            <div class="input-group">
+
+                <label>
+                    Loan Amount
+                    <span id="loanValue"></span>
+                </label>
+
+                <input type="range" id="loan"
+                    min="100000"
+                    max="5000000"
+                    step="10000">
+
+            </div>
+
+            <div class="input-group">
+
+                <label>
+                    Interest Rate
+                    <span id="rateValue"></span>
+                </label>
+
+                <input type="range"
+                    id="rate"
+                    min="1"
+                    max="20"
+                    step="0.1">
+
+            </div>
+
+            <div class="input-group">
+
+                <label>
+                    Loan Tenure
+                    <span id="yearValue"></span>
+                </label>
+
+                <input type="range"
+                    id="years"
+                    min="1"
+                    max="30">
+
+            </div>
+
+        </div>
+
+        <div class="right">
+
+            <div class="big" id="emi">₹0</div>
+
+            <div class="title">
+                Monthly EMI
+            </div>
+
+            <div class="card">
+
+                <h3>Loan Summary</h3>
+
+                <p>Total Interest :
+                    <strong id="interest"></strong>
+                </p>
+
+                <p>Total Payment :
+                    <strong id="payment"></strong>
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
